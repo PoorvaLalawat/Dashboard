@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* a {
+  color: inherit;
+  text-decoration: none;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.circle-big {
+  position: relative;
+  width: 114px;
+  height: 114px;
+  margin: 30px auto 25px auto;
+}
+
+.circle-big svg {
+  width: 114px;
+  height: 114px;
+}
+
+.circle-big .bg {
+  fill: none;
+  stroke-width: 10px;
+  stroke: teal;
+}
+
+.circle-big .progress {
+  fill: none;
+  stroke-width: 10px;
+  stroke: turquoise;
+  stroke-linecap: round;
+  stroke-dasharray: 326.56;
+  stroke-dashoffset: 60;
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+          animation: big 1.5s ease-in-out;
+}
+
+.circle-big .text {
+  position:absolute;
+  width: 100%;
+  top: 45px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.node {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display:inline-block;
+  transition: all 1000ms ease;
+}
+
+
+.divider {
+  height: 40px;
+  width: 2px;
+  margin-left: 4px;
+  transition: all 800ms ease;
+}
+
+li p {
+  display:inline-block;
+  margin-left: 25px;
+}
+
+li {
+  list-style: none;
+  line-height: 1px;
+}
+
+
+.blue { background-color: rgba(82, 165, 255, 1); }
+.green{ background-color: rgba(92, 184, 92, 1); }
+.red { background-color: red; }
+.grey { background-color: rgba(201, 201, 201, 1); }
+.purple { background-color: purple; }
+
+.dropdown:focus-within .dropdown-menu {
+  opacity:1;
+  transform: translate(0) scale(1);
+  visibility: visible;
+}

@@ -1,0 +1,6 @@
+
+export { default as HomeIcon } from "./HomeIcon";
+export { default as UsersIcon } from "./UsersIcon";
+
+export { default as CollapsIcon } from "./CollapsIcon";
+

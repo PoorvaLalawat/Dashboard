@@ -6,32 +6,7 @@ const users = () => {
   
       <Layout>
 
-{/* 
-<div class="container">
-        <div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-photo">
-                        <img src="https://demos.creative-tim.com/impact-design-system-pro/docs/assets/img/team/6.jpg" alt=""></img>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-name">Beni Smith</h3>
-                    <p class="card-description">User Interface Designer and <br/>front-end developer</p>
-                    <div class="card-button">
-                        <button class="btn btn-primary">Message</button>
-                        <button class="btn btn-outline-primary">Following</button>
-                    </div>
-                    <ul class="card-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> */}
+
 
 
 <div class="bg-gray-200 font-sans h-screen w-full flex flex-row justify-center items-center">

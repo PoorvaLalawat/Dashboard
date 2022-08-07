@@ -2,7 +2,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useMemo } from "react";
-import {CollapsIcon,HomeIcon,UsersIcon} from "./icons"
+import {HomeIcon,UsersIcon} from "./icons"
 
 const menuItems = [
   { id: 1, label: "Dashboard", icon: HomeIcon, link: "/" },
@@ -12,7 +12,7 @@ const menuItems = [
 
 const Sidebar = () => {
   const [toggleCollapse, setToggleCollapse] = useState(false);
-  const [isCollapsible, setIsCollapsible] = useState(false);
+  // const [isCollapsible, setIsCollapsible] = useState(false);
 
   const router = useRouter();
 
@@ -25,62 +25,39 @@ const Sidebar = () => {
   const wrapperClasses = classNames(
     "px-4 pt-8 pb-4 bg-black flex justify-between flex-col",
     {
-      ["w-60"]: !toggleCollapse,
+      ["w-30"]: !toggleCollapse,
       ["w-20"]: toggleCollapse,
     }
   );
 
-  const collapseIconClasses = classNames(
-    "p-4 rounded absolute right-0",
-    {
-      "rotate-180": toggleCollapse,
-
-    }
-  );
+  
 
   const getNavItemClasses = (menu) => {
     return classNames(
-      "flex items-center cursor-pointer hover:bg-sky-500 rounded w-full overflow-hidden whitespace-nowrap",
+      "flex items-center cursor-pointer hover:bg-blue-500 rounded w-full overflow-hidden whitespace-nowrap",
       {
         ["bg-dark"]: activeMenu.id === menu.id,
       }
     );
   };
 
-  const onMouseOver = () => {
-    setIsCollapsible(!isCollapsible);
-  };
-
-  const handleSidebarToggle = () => {
-    setToggleCollapse(!toggleCollapse);
-  };
-
+  
+ 
   return (
     <div
-      className={wrapperClasses}
-      onMouseEnter={onMouseOver}
-      onMouseLeave={onMouseOver}
-      style={{ transition: "width 300ms cubic-bezier(0.2, 0, 0, 1) 0s" }}>
+      className={wrapperClasses}>
 
       <div className="flex flex-col">
         <div className="flex items-center justify-between relative">
           <div className="flex items-center pl-1 gap-4">
             <span
               className={classNames("mt-2 text-lg font-medium text-text text-white", {
-                hidden: toggleCollapse,
               })}
             >
              METRONIC
             </span>
           </div>
-          {isCollapsible && (
-            <button
-              className={collapseIconClasses}
-              onClick={handleSidebarToggle}
-            >
-              <CollapsIcon />
-            </button>
-          )}
+         
         </div>
       
         <div className="flex flex-col items-start mt-24">
@@ -111,7 +88,7 @@ const Sidebar = () => {
           })}
         </div>
       </div>
-      </div>
+    </div>
     
   
     

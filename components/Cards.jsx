@@ -1,6 +1,5 @@
 import React from 'react'
 import 'tw-elements';
-
 import styles from "../styles/Home.module.css"
 import { Line } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
@@ -34,7 +33,7 @@ const data = {
 const cards = () => {
     return (
 
-        <div class="flex flex-col bg-slate-500">
+        <div class="flex flex-col bg-gray-300">
             <div class='flex flex-row flex-wrap justify-evenly mt-8 mb-8 relative'>
                 {/* Card 1 */}
 
@@ -1406,7 +1405,7 @@ const cards = () => {
 
         {/* Card 7 */}
 
-        <div className="bg-white w-7/12 h-5/6 ml-6 rounded-lg">
+        <div className="bg-white w-7/12 ml-6 rounded-lg">
             <div class='m-4 flex justify-between font-bold'>
                 <p> Agents Stat </p>
                 <div class="flex space-x-2 justify-center">
@@ -1449,10 +1448,7 @@ const cards = () => {
                                     <tr>
                                         <td class="py-3 px-6 text-left whitespace-nowrap">
                                             <div class="flex items-center">
-                                                <div class="mr-2">
-
-                                                    <img class="w-8 h-8" src="https://img.icons8.com/fluency/48/000000/popular-woman.png" />
-                                                </div>
+                                                
                                                 <span class="font-medium">Brad Simmons</span>
                                             </div>
                                         </td>
@@ -1475,7 +1471,7 @@ const cards = () => {
                                         </td>
                                         <td class="py-3 px-6 text-center">
                                             <div class="flex item-center justify-center">
-                                                <button className='text-white h-10 py-2 px-4 m-2 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
+                                                <button className='text-white h-10 px-4 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -1484,9 +1480,7 @@ const cards = () => {
                                     <tr>
                                         <td class="py-3 px-6 text-left whitespace-nowrap">
                                             <div class="flex items-center">
-                                                <div class="mr-2">
-                                                    <img class="w-8 h-8" src="https://img.icons8.com/fluency/48/000000/popular-woman.png" />
-                                                </div>
+                                                
                                                 <span class="font-medium">Application</span>
                                             </div>
                                         </td>
@@ -1508,7 +1502,7 @@ const cards = () => {
                                         </td>
                                         <td class="py-3 px-6 text-center">
                                             <div class="flex item-center justify-center">
-                                                <button className='text-white h-10 py-2 px-4 m-2 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
+                                                <button className='text-white h-10 px-4 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -1516,9 +1510,7 @@ const cards = () => {
                                     <tr>
                                         <td class="py-3 px-6 text-left whitespace-nowrap">
                                             <div class="flex items-center">
-                                                <div class="mr-2">
-                                                    <img class="w-8 h-8" src="https://img.icons8.com/fluency/48/000000/popular-woman.png" />
-                                                </div>
+                                                
                                                 <span class="font-medium">React Project</span>
                                             </div>
                                         </td>
@@ -1542,7 +1534,7 @@ const cards = () => {
                                             <div class="flex item-center justify-center">
 
 
-                                                <button className='text-white h-10 py-2 px-4 m-2 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
+                                                <button className='text-white h-10 px-4 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -1550,9 +1542,7 @@ const cards = () => {
                                     <tr>
                                         <td class="py-3 px-6 text-left whitespace-nowrap">
                                             <div class="flex items-center">
-                                                <div class="mr-2">
-                                                    <img class="w-8 h-8" src="https://img.icons8.com/fluency/48/000000/popular-woman.png" />
-                                                </div>
+                                                
                                                 <span class="font-medium">React Project</span>
                                             </div>
                                         </td>
@@ -1574,7 +1564,36 @@ const cards = () => {
                                         </td>
                                         <td class="py-3 px-6 text-center">
                                             <div class="flex item-center justify-center">
-                                                <button className='text-white h-10 py-2 px-4 m-2 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
+                                                <button className='text-white h-10 px-4 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-6 text-left whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                
+                                                <span class="font-medium">React Project</span>
+                                            </div>
+                                        </td>
+                                        <td class="py-3 px-6 text-left">
+                                            <div class="flex items-center">
+                                                <div class="mr-2 font-bold ">
+                                                    $2,00,000
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="py-3 px-6 text-center">
+                                            <div class="flex items-center justify-center">
+                                                React JS, HTML
+                                            </div>
+                                        </td>
+                                        <td class="py-3 px-6 text-center">
+                                            <span class="bg-red-200 text-red-600 py-2 px-3 rounded-lg text-xs">Rejectedd</span>
+                                        </td>
+                                        <td class="py-3 px-6 text-center">
+                                            <div class="flex item-center justify-center">
+                                                <button className='text-white h-9 px-4 bg-teal-400 hover:bg-teal-500 text-xs rounded justify-center'>View Offer</button>
                                             </div>
                                         </td>
                                     </tr>

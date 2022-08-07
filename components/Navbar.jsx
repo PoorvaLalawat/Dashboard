@@ -1,5 +1,6 @@
 import React from 'react'
 import 'tw-elements';
+import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
@@ -52,10 +53,14 @@ const Navbar = () => {
 
             <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
               <li class="nav-item p-2">
+              
                 <a class="nav-link text-gray-500 hover:text-blue-700 focus:text-gray-700 p-0" href="#">Dashboard</a>
+                
               </li>
               <li class="nav-item p-2">
+        
                 <a class="nav-link text-gray-500 hover:text-blue-700 focus:text-gray-700 p-0" href="#">Material UI</a>
+               
               </li>
             </ul>
 

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import 'tw-elements';
 import Cards from "../components/Cards";
+import Sidebar from "../components/Sidebar";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
        
       <Layout>
         <Navbar />
+     
         <main>
           <Cards/>
         </main>

@@ -60,7 +60,7 @@ const Sidebar = () => {
          
         </div>
       
-        <div className="flex flex-col items-start mt-24">
+        <div key={id} className="flex flex-col items-start mt-24">
           {menuItems.map(({ icon: Icon, ...menu }) => {
             const classes = getNavItemClasses(menu);
             return (
